@@ -71,7 +71,6 @@ body {
 }
 .header {
   background-color: #fff;
-  padding-top: 24px;
   border: 1px solid #ececec;
 }
 .logo-header {
@@ -130,8 +129,8 @@ body {
 }
 /* main */
 /* Ефективні рішення для вашого бізнесу */
-.hero-wrapper {
-  padding: 200px 452px;
+.hero {
+  padding: 200px 0px;
 }
 .hero {
   background-color: var(--tertiary-background-color);
@@ -167,19 +166,23 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--tertiary-text-color);
-  min-width: 696px;
   min-height: 120px;
+  max-width: 696px;
+  margin: 0 auto;
 }
 /* Особливості */
-.features > .container {
+.features {
   padding-top: 94px;
   padding-bottom: 47px;
 }
 .features-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
 }
-.features-list-item:not(:first-child) {
-  margin-left: 30px;
+.features-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
 }
 .visually-hidden {
   position: absolute;
@@ -232,15 +235,18 @@ body {
 }
 
 /*  Наша команда */
-.team > .container {
+.team {
   padding-top: 47px;
-  padding-bottom: 90px;
+  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
 }
-.team-card:not(:first-child) {
-  margin-left: 30px;
+.team-card {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
 }
 .team {
   background-color: var(--secondary-background-color);
@@ -274,15 +280,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   text-align: center;
+
+  padding-bottom: 30px;
 }
 .team-card {
-  min-height: 368px;
   min-width: 270;
   background-color: var(--tertiary-text-color);
   border-radius: 0px 0px 4px 4px;
 }
 /* footer */
-.footer > .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -315,11 +322,11 @@ body {
   color: var(--accent-color);
 }
 .logo-footer {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 /* Portfolio */
-.portfolio-content > .container {
+.portfolio-content {
   padding-top: 94px;
 }
 .btn-list {
@@ -330,21 +337,25 @@ body {
   margin-left: 8px;
 }
 .portfolio-list {
-  padding-top: 50px;
+  margin-top: 50px;
   padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
 }
 .portfolio-card-list {
-  border: 1px solid #eeeeee;
-  margin-right: 27px;
-  margin-bottom: 27px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .portfolio-card-list:nth-child(3n) {
   margin-right: 0px;
 }
 .portfolio-card-list:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+.port-card-description {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .portfolio-btn {
   font-weight: 500;
@@ -371,20 +382,20 @@ body {
   color: var(--primary-text-color);
   text-decoration: none;
 
-  margin-left: 24px;
+  /* margin-left: 24px;
   margin-top: 20px;
-  margin-right: 24px;
+ margin-right: 24px; */
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.8;
   color: var(--secondary-text-color);
   text-decoration: none;
-
+  /* 
   margin-left: 24px;
   margin-top: 4px;
   margin-bottom: 20px;
-  margin-right: 24px;
+  margin-right: 24px; */
 }
 .portfolio-card {
   text-decoration: none;
