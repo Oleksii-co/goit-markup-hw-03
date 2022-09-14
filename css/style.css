@@ -66,16 +66,16 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .header {
   background-color: #fff;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .logo-header {
   margin-right: 93px;
   display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-nav {
   display: flex;
@@ -166,7 +166,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--tertiary-text-color);
-  min-height: 120px;
   max-width: 696px;
   margin: 0 auto;
 }
@@ -213,7 +212,7 @@ body {
   color: var(--secondary-text-color);
 }
 /* чим ми займаємось */
-.about > .container {
+.about {
   padding-top: 47px;
   padding-bottom: 47px;
 }
@@ -328,6 +327,7 @@ body {
 /* Portfolio */
 .portfolio-content {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .btn-list {
   display: flex;
@@ -338,7 +338,7 @@ body {
 }
 .portfolio-list {
   margin-top: 50px;
-  padding-bottom: 94px;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -365,8 +365,7 @@ body {
   cursor: pointer;
   background-color: var(--secondary-background-color);
 
-  min-height: 38px;
-  min-width: 73px;
+  padding: 6px 24px;
   border: 0px;
   border-radius: 4px;
 }
@@ -382,9 +381,7 @@ body {
   color: var(--primary-text-color);
   text-decoration: none;
 
-  /* margin-left: 24px;
-  margin-top: 20px;
- margin-right: 24px; */
+  margin-bottom: 4px;
 }
 .portfolio-text {
   font-size: 16px;
