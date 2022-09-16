@@ -117,6 +117,7 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
 }
 .header-link-address {
   color: var(--secondary-text-color);
@@ -128,6 +129,7 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
 }
 /* main */
 /* Ефективні рішення для вашого бізнесу */
@@ -185,6 +187,9 @@ body {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
+.features-list-item:last-child{
+  margin-right: 0;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -216,7 +221,7 @@ body {
 /* чим ми займаємось */
 .about {
   padding-top: 47px;
-  padding-bottom: 47px;
+  padding-bottom: 94px;
 }
 .about-list {
   display: flex;
@@ -237,13 +242,12 @@ body {
 
 /*  Наша команда */
 .team {
-  padding-top: 47px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
 }
 .team-card {
   flex-basis: calc(100% / 4 - 30px);
